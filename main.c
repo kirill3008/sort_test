@@ -106,12 +106,14 @@ int sort_check(int * a, int n){
 
 
 
+
 int main(void){
     //установка сида rng
     srand(time(NULL));
     //выбор размера массива для теста
-    int n = 100;
+    int n = 1000;
     int a[n];
+    //создавние массива для теста
     random_array(a,n);
     quick_sort(a,n);
     printf("%d\n", sort_check(a,n));
